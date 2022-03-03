@@ -1,68 +1,70 @@
-# Looker Extension with Embed Demo
+# Getting Started with Create React App
 
-This example demonstrates using Looker embeds in an extension.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Getting Started for Development
+## Available Scripts
 
-1. Clone the Looker extension examples repo.
+In the project directory, you can run:
 
-   ```
-   # cd ~/ Optional, your user directory is usually a good place to git clone to.
-   git clone git@github.com:looker-open-source/extension-examples.git
-   ```
+### `npm start`
 
-2. Navigate (`cd`) to the example directory on your system
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-   ```
-   cd extension-examples/react/javascript/demo-embeds
-   ```
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-3. Install the dependencies with [Yarn](https://yarnpkg.com/).
+### `npm test`
 
-   ```
-   yarn install
-   ```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-4. Start the development server
+### `npm run build`
 
-   ```
-   yarn develop
-   ```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-   The extension is now running and serving the JavaScript locally at http://localhost:8080/bundle.js.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-5. Log in to Looker and create a new project.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-   This is found under **Develop** => **Manage LookML Projects** => **New LookML Project**.
+### `npm run eject`
 
-   Select "Blank Project" as your "Starting Point". This will create a new project with no files.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-   1. The extension folder has a `manifest.lkml` file.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-   Either drag & upload this file into your Looker project, or create a `manifest.lkml` with the same content. Change the label, project name, application id, url and/or file as needed.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-6. Create a `model` LookML file in your project. The name doesn't matter but the convention is to name it the same as the project— in this case, demo-embeds.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- Add a connection in this model.
-- [Configure the model you created](https://docs.looker.com/data-modeling/getting-started/create-projects#configuring_a_model) so that it has access to the selected connection.
-  We do this because Looker permissions data access via models. In order to grant / limit access to an extension, it must be associated with a model.
+## Learn More
 
-7. Connect the project to Git. This can be done in multiple ways:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- Create a new repository on GitHub or a similar service, and follow the instructions to [connect your project to Git](https://docs.looker.com/data-modeling/getting-started/setting-up-git-connection)
-- A simpler but less powerful approach is to set up git with the "Bare" repository option which does not require connecting to an external Git Service.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-8. Commit the changes and deploy them to production through the Project UI.
+### Code Splitting
 
-9. Reload the page and click the `Browse` dropdown menu. You will see the extension in the list.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- The extension will load the JavaScript from the `url` provided in the `application` definition. By default, this is http://localhost:8080/bundle.js. If you change the port your server runs on in the package.json, you will need to also update it in the manifest.lkml.
-- Refreshing the extension page will bring in any new code changes from the extension template, although some changes will hot reload.
+### Analyzing the Bundle Size
 
-## Deployment
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-The process above describes how to run the extension for development. Once you're done developing and ready to deploy, the production version of the extension may be deployed as follows:
+### Making a Progressive Web App
 
-1. In the extension project directory build the extension by running `yarn build`.
-2. Drag and drop the generated `dist/bundle.js` file into the Looker project interface
-3. Modify the `manifest.lkml` to use `file` instead of `url`:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
