@@ -1,10 +1,9 @@
-project_name: "demo-embeds"
+project_name: "form_using_jupyter_notebook"
 
-application: demo-embeds {
-  label: "Demo Embeds"
+application: form_using_jupyter_notebook {
+  label: "Form Using Jupyter Notebook"
   # use url for development
-  #url: "http://localhost:8080/bundle.js"
-  url: "https://ea62-181-231-5-174.ngrok.io/bundle.js"
+  url: "http://localhost:8080/bundle.js"
   # use file for production deployment
   # file: "bundle.js"
   entitlements: {
